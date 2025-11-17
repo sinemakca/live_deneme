@@ -1,1 +1,46 @@
-# live_deneme
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Canlı Yayın - Infusocial</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+    iframe {
+        border: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- CANLI VİDEO -->
+    <iframe
+        width="70%"
+        height="100%"
+        src="https://www.youtube.com/embed/PkdynAooKw4"
+        allowfullscreen>
+    </iframe>
+
+    <!-- CANLI SOHBET -->
+    <iframe
+        width="30%"
+        height="100%"
+        src="https://www.youtube.com/live_chat?v=PkdynAooKw4&embed_domain=www.infusocial.com">
+    </iframe>
+
+</div>
+
+</body>
+</html>
