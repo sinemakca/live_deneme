@@ -38,12 +38,13 @@
         border-radius: 8px;
     }
 
+    /* TIKLAMAYI ENGELLEYEN ŞEFFAF KATMAN */
     .blocker {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 70px;
+        height: 70px; /* sadece üst barı kapatır */
         background: rgba(0,0,0,0);
         z-index: 10;
         pointer-events: auto;
@@ -64,7 +65,7 @@
 
     <div class="video-wrapper">
 
-        <!-- Üst butonları engelleyen katman -->
+        <!-- Üstteki kanal ismi ve butonları kapatan şeffaf katman -->
         <div class="blocker"></div>
 
         <!-- CANLI VİDEO (GÜNCELLENDİ) -->
