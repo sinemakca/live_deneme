@@ -29,23 +29,24 @@
         width: 100%;
     }
 
-    .video {
+    iframe.video {
         width: 100%;
         height: 650px;
         border: none;
         border-radius: 8px;
+        display: block;
     }
 
-    /* Üstteki kanal ismi alanını tıklanamaz yapan şeffaf katman */
-    .blocker {
+    /* TÜM IFRAME ÜZERİNİ TIKLANAMAZ YAPAN KATMAN */
+    .blocker-full {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 70px;
-        background: rgba(0,0,0,0);
+        height: 100%;
         z-index: 10;
-        pointer-events: auto;
+        background: rgba(0,0,0,0); /* tamamen görünmez */
+        pointer-events: auto; /* tıklamayı alıp videoya geçirmez */
     }
 </style>
 
@@ -53,20 +54,19 @@
 <body>
 
 <div class="wrapper">
-
     <div class="video-wrapper">
 
-        <!-- Üstteki tıklanabilir alanı kapatan katman -->
-        <div class="blocker"></div>
+        <!-- TÜM BUTONLARI KAPLAMAK İÇİN FULL BLOCKER -->
+        <div class="blocker-full"></div>
 
-        <!-- Güncel CANLI YAYIN -->
+        <!-- CANLI YAYIN -->
         <iframe
             class="video"
-            src="https://www.youtube.com/embed/EznaaSEaUoA"
+            src="https://www.youtube.com/embed/EznaaSEaUoA?autoplay=1&mute=1"
             allowfullscreen>
         </iframe>
-    </div>
 
+    </div>
 </div>
 
 </body>
